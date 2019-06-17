@@ -1,0 +1,189 @@
+<% var keys= Object.keys(order) %>
+        <% keys.forEach(function(key){ %>
+        <p> <%= order[key] %> </p>
+        <% )} %>
+        
+        
+        
+                <% var childkey=Object.childkey(child)%>
+        <% childkeys.forEach(function(x){%>
+        <p><%= x%></p>
+        <% })%>
+        
+        
+                <% var keys= Object.keys(order) %>
+        <% keys.forEach(function(key){ %>
+        <p> <%= key %> </p>
+        <% }) %>
+        
+        
+        
+        <% var keys= Object.keys(name) %>
+        <% keys.forEach(function(key){ %>
+        <p> <%= key %> </p>
+        <% }) %>
+        
+        
+        
+        
+        <!DOCTYPE html>
+<html>
+<head>
+	<title>iknowmytoys</title>
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDoVgBQCil0iR9NRQA2eRXYhwJTguHHH-s",
+        authDomain: "ecommerce-admin-panel.firebaseapp.com",
+        databaseURL: "https://ecommerce-admin-panel.firebaseio.com",
+        projectId: "ecommerce-admin-panel",
+        storageBucket: "ecommerce-admin-panel.appspot.com",
+        messagingSenderId: "301416143131"
+      };
+      firebase.initializeApp(config);
+    </script>
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    <div>
+        <!--<p id= abc></p>-->
+        <% var keys= Object.keys(order) %>
+        <% keys.forEach(function(key){ %>
+        <div><%= order[key].name %>  
+        <%= order[key].qyt %> </div>
+
+        <% }) %>
+    </div>
+    
+    <script> </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDoVgBQCil0iR9NRQA2eRXYhwJTguHHH-s",
+        authDomain: "ecommerce-admin-panel.firebaseapp.com",
+        databaseURL: "https://ecommerce-admin-panel.firebaseio.com",
+        projectId: "ecommerce-admin-panel",
+        storageBucket: "ecommerce-admin-panel.appspot.com",
+        messagingSenderId: "301416143131"
+      };
+      firebase.initializeApp(config);
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                          <div>
+        <!--<p id= abc></p>-->
+        <% var keys= Object.keys(order) %>
+        <% keys.forEach(function(key){ %>
+        <div><%= order[key].name %>  
+        <%= order[key].qyt %> </div>
+
+        <% }) %>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+            
+        <!-- DataTables Example -->
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fas fa-table"></i>
+            Order Table</div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th>CustomerID</th>
+                    <th>Shipment</th>
+                    <th>Payment</th>
+                    <th>Status</th>
+                    <th>Comments</th>
+                  </tr>
+                </thead>
+                <tfoot>
+                  <tr>
+                    <th>CustomerID</th>
+                    <th>Shipment</th>
+                    <th>Payment</th>
+                    <th>Status</th>
+                    <th>Comments</th>
+                  </tr>
+                </tfoot>
+                <tbody>
+                  <% var keys= Object.keys(customer) %>
+                  <% keys.forEach(function(key){ %>
+                  <tr>
+                    <td><%= customer[key].custID %></td>
+                    <td><%= customer[key].shipment %></td>
+                    <td><%= customer[key].payment %></td>
+                    <td><%= customer[key].status %></td>  
+                    <td><%= customer[key].comments %></td>          
+                  </tr>
+                <% }) %>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        </div>
+        
+        fas fa-fw fa-tachometer-alt
+        
+        
+        
+        
+        
+                              <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <%= order[key].status %>  
+                      </button>
+                      
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    </div>
+                    </div>
